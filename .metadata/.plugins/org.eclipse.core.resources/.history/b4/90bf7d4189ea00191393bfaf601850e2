@@ -1,0 +1,8 @@
+package sk.stuba.fiit.courseadministrationsystem;
+package sk.stuba.fiit.zoop.student;
+
+
+public class StudentsManager {
+	
+	Student[] students = new Student[100];
+}

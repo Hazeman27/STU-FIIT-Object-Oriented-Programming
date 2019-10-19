@@ -1,0 +1,6 @@
+package eu.hazeman.caesar.romanarmy;
+
+public interface Soldier {
+	
+	
+}
