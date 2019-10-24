@@ -3,86 +3,62 @@ package military.romans.troops;
 import military.romans.officers.Legate;
 import military.troop.Troop;
 
-public class Legion implements Troop {
+import java.util.ArrayList;
 
-    private final int cohortsMaxAmount = 10;
-    private Cohort[] cohorts = new Cohort[this.cohortsMaxAmount];
-    private Legate legate;
+public class Legion extends Troop {
 
-    public Legion(Cohort[] cohorts, Legate legate) {
+    private int number;
 
-        this.initCohorts(cohorts);
-        this.legate = legate;
+    public Legion(ArrayList<Troop> cohorts, Legate legate, int number) {
+
+        super("Legion", cohorts, legate, 9);
+
+        this.addFirstCohort();
+        this.number = number;
     }
-    
-    public Legion(Cohort[] cohorts) {
+
+    public Legion(ArrayList<Troop> cohorts, int number) {
+
+        super("Legion", cohorts, 9);
+
+        this.addFirstCohort();
+        this.number = number;
+    }
+
+    public Legion(int number) {
         
-        this.initCohorts(cohorts);
-        this.legate = new Legate();
+        super("Legion", null, 9);
+
+        this.addFirstCohort();
+        this.number = number;
     }
 
     public Legion() {
         
-        this.initCohorts(null);
-        this.legate = new Legate();
+        super("Legion", null, 9);
+
+        this.addFirstCohort();
+        this.number = 0;
     }
 
-    public void initCohorts(Cohort[] cohorts) {
+    private void addFirstCohort() {
 
-        if (cohorts == null) 
-            for (int i = 0; i < this.cohortsMaxAmount; i++)
-                this.cohorts[i] = new Cohort(!(i != 0));
+        CohortFirst cohortFirst = new CohortFirst();
+        this.troops.add(cohortFirst);
 
-        else
-            for (int i = 0; i < this.cohortsMaxAmount; i++)
-                this.cohorts[i] = cohorts[i];
+        this.soldiers.addAll(cohortFirst.getSoldiers());
+        this.soldiers.add(cohortFirst.getOfficer());
     }
 
     public void printSymbol() {
         System.out.println("[><]");
     }
 
-    public Cohort[] getCohorts() {
-        return this.cohorts;
+    public int getNumber() {
+        return this.number;
     }
 
-    public Cohort getFirstCohort() {
-        return this.cohorts[0];
-    }
-
-    public Legate getLegate() {
-        return this.legate;
-    }
- 
-    public void advance() {
-
-    }
-
-    public void retreat() {
-
-    }
-
-    public void engage() {
-
-    }
-
-    public void hold() {
-
-    }
-
-    public void changeFormation() {
-
-    }
-
-    public void receiveOrder() {
-
-    }
-
-    public void acceptOrder() {
-
-    }
-
-    public void rejectOrder() {
-
+    public void setNumber(int number) {
+        this.number = number;
     }
 }

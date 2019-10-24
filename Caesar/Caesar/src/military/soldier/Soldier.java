@@ -1,12 +1,46 @@
 package military.soldier;
 
-public abstract class Soldier {
+public class Soldier {
 
-    private Status morale = new Status(50);
-    private Status energy = new Status(50);
-    private Status satiety = new Status(50);
-    private Status hygiene = new Status(50);
-    private Status health = new Status();
+    private Status morale;
+    private Status energy;
+    private Status satiety;
+    private Status hygiene;
+    private Status health;
+
+    public Soldier(
+        Status morale,
+        Status energy,
+        Status satiety,
+        Status hygiene,
+        Status health
+    ) {
+        this.morale = morale;
+        this.energy = energy;
+        this.satiety = satiety;
+        this.hygiene = hygiene;
+        this.health = health;
+    }
+
+    public Soldier(Status[] status) {
+        this.morale = status[0];
+        this.energy = status[1];
+        this.satiety = status[2];
+        this.hygiene = status[3];
+        this.health = status[4];
+    }
+
+    public Soldier() {
+        this.morale = new Status(50);
+        this.energy = new Status(50);
+        this.satiety = new Status(50);
+        this.hygiene = new Status(50);
+        this.health = new Status();
+    }
+
+    public static void perish(Soldier soldier) {
+        soldier = null;
+    }
 
     public final int getMorale() {
         return this.morale.get();
@@ -49,10 +83,6 @@ public abstract class Soldier {
     }
 
     public void flee() {
-
-    }
-
-    public void die() {
 
     }
 

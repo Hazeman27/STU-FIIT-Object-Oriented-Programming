@@ -1,111 +1,20 @@
 package military.romans.troops;
 
 import military.romans.officers.Centurion;
-import military.romans.troops.Contubernium;
 import military.troop.Troop;
+import java.util.ArrayList;
 
-public class Century implements Troop {
-
-    private int contuberniumsMaxAmount = 10;
-    private boolean isInFirstCohort = false;
-    private Contubernium[] contuberniums;
-    private Centurion centurion;
+public class Century extends Troop {
     
-    public Century(boolean isInFirstCohort, Contubernium[] contuberniums, Centurion centurion) {
-
-        this.initContuberniums(isInFirstCohort);
-        this.fillContuberniums(isInFirstCohort, contuberniums);
-
-        this.centurion = centurion;
+    public Century(ArrayList<Troop> contuberniums, Centurion centurion) {
+        super("Century", contuberniums, centurion, 10);
     }
     
-    public Century(boolean isInFirstCohort, Contubernium[] contuberniums) {
-        
-        this.initContuberniums(isInFirstCohort);
-        this.fillContuberniums(isInFirstCohort, contuberniums);
-
-        this.centurion = new Centurion();
-    }
-
-    public Century(boolean isInFirstCohort) {
-        
-        this.initContuberniums(isInFirstCohort);
-        this.fillContuberniums(isInFirstCohort, null);
-
-        this.centurion = new Centurion();
+    public Century(ArrayList<Troop> contuberniums) {
+        super("Century", contuberniums, 10);
     }
 
     public Century() {
-        
-        this.initContuberniums(false);
-        this.fillContuberniums(false, null);
-
-        this.centurion = new Centurion();
-    }
-
-    public void initContuberniums(boolean isInFirstCohort) {
-
-        if (isInFirstCohort) {
-            
-            this.isInFirstCohort = true;
-            this.contuberniumsMaxAmount = 20;
-        }
-
-        this.contuberniums = new Contubernium[this.contuberniumsMaxAmount];
-    }
-
-    public void fillContuberniums(boolean inFirstCohort, Contubernium[] contuberniums) {
-
-        if (contuberniums == null) 
-            for (int i = 0; i < this.contuberniumsMaxAmount; i++)
-                this.contuberniums[i] = new Contubernium();
-
-        else
-            for (int i = 0; i < this.contuberniumsMaxAmount; i++)
-                this.contuberniums[i] = contuberniums[i];
-    }
-
-    public Contubernium[] getContuberniums() {
-        return this.contuberniums;
-    }
-
-    public Centurion getCenturion() {
-        return this.centurion;
-    }
-
-    public boolean isInFirstCohort() {
-        return this.isInFirstCohort;
-    }
- 
-    public void advance() {
-
-    }
-
-    public void retreat() {
-
-    }
-
-    public void engage() {
-
-    }
-
-    public void hold() {
-
-    }
-
-    public void changeFormation() {
-
-    }
-
-    public void receiveOrder() {
-
-    }
-
-    public void acceptOrder() {
-
-    }
-
-    public void rejectOrder() {
-
+        super("Century", null, 10);
     }
 }

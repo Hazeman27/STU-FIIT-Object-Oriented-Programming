@@ -1,12 +1,11 @@
 package app;
 
+import military.troop.Troop;
 import military.romans.troops.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        Legion legion = new Legion();
-        
-        legion.printSymbol();
+
+        System.out.println(Troop.fullSummary(new Legion()));
     }
 }
