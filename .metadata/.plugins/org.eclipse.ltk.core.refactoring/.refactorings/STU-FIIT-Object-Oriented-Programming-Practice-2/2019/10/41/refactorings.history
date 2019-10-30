@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;sk.stuba.fiit.zoop.student&apos; to &apos;STU-FIIT-Object-Oriented-Programming-Practice-3/src&apos;&#x0D;&#x0A;- Original project: &apos;STU-FIIT-Object-Oriented-Programming-Practice-2&apos;&#x0D;&#x0A;- Destination element: &apos;STU-FIIT-Object-Oriented-Programming-Practice-3/src&apos;&#x0D;&#x0A;- Original element: &apos;STU-FIIT-Object-Oriented-Programming-Practice-2/src/sk.stuba.fiit.zoop.student&apos;" description="Copy package" destination="=STU-FIIT-Object-Oriented-Programming-Practice-3/src" element1="/src&lt;sk.stuba.fiit.zoop.student" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1570621042235" version="1.0"/>
-</session>

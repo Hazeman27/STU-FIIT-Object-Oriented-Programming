@@ -1,6 +1,0 @@
-package eu.hazeman.romanarmy;
-
-public interface Soldier {
-	
-	
-}
