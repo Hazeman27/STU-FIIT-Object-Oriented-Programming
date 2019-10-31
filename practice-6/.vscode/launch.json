@@ -1,0 +1,102 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TwoDArray",
+            "request": "launch",
+            "mainClass": "tij.exercise19.TwoDArray",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticInitialization",
+            "request": "launch",
+            "mainClass": "tij.exercise17.StaticInitialization",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Uninitialized",
+            "request": "launch",
+            "mainClass": "tij.exercise14.Uninitialized",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Finalize",
+            "request": "launch",
+            "mainClass": "tij.exercise11.Finalize",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DoubleConstructor",
+            "request": "launch",
+            "mainClass": "tij.exercise10.DoubleConstructor",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - This",
+            "request": "launch",
+            "mainClass": "tij.exercise9.This",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NoConstructor",
+            "request": "launch",
+            "mainClass": "tij.exercise8.NoConstructor",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dog",
+            "request": "launch",
+            "mainClass": "tij.exercise6.Dog",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringsArray",
+            "request": "launch",
+            "mainClass": "tij.exercise5.StringsArray",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReferencesArray",
+            "request": "launch",
+            "mainClass": "tij.exercise3.ReferencesArray",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Overload",
+            "request": "launch",
+            "mainClass": "tij.exercise2.Overload",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Simple",
+            "request": "launch",
+            "mainClass": "tij.exercise1.Simple",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Chess",
+            "request": "launch",
+            "mainClass": "chess.Chess",
+            "projectName": "practice-6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Cartoon",
+            "request": "launch",
+            "mainClass": "cartoon.Cartoon",
+            "projectName": "practice-6"
+        }
+    ]
+}
